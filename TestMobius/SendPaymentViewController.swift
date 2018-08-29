@@ -14,9 +14,11 @@ class SendPaymentViewController: UIViewController {
     @IBOutlet weak var receiverpublickeytxtfield: UITextField!
     @IBOutlet weak var totalamounttxtfield: UITextField!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Sendersecretkeytxtfield.text = "SB35BOVVOO2XFDEEHYP2JJADZE4X6EGHFUXA4ZYBSWWSZB4GGA5SH3VN"
+        receiverpublickeytxtfield.text = "GCSAVWAQ4BXYV2AGFHYZDOTOHZMP3LAZYWP4MBFXU6WBC3KQT5CXAHZF"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -29,7 +31,7 @@ class SendPaymentViewController: UIViewController {
     }
     
     @IBAction func sendPaymentbtntpd(_ sender: Any) {
-         let account = StellarSDK.Account.fromSecret(Sendersecretkeytxtfield.text!)  // Generates the public key from secret key
+        let account = StellarSDK.Account.fromSecret(Sendersecretkeytxtfield.text!)  // Generates the public key from secret key
         account?.useNetwork(.test)
         account?.useTestNetwork()
         
@@ -65,7 +67,7 @@ class SendPaymentViewController: UIViewController {
         }
         else
         {
-            
+            self.view.endEditing(true)
             let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
             
             let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
@@ -80,19 +82,22 @@ class SendPaymentViewController: UIViewController {
                 print(response.message)
                 account?.getBalances(callback: { response  in
                     print((response.first?.balance)!)
-                    alert.dismiss(animated: false, completion: nil)
-                    let alertController = UIAlertController(title: "", message: "Your balance is "+(response.first?.balance)!, preferredStyle:UIAlertControllerStyle.alert)
+                    DispatchQueue.main.async {
+                        alert.dismiss(animated: false, completion: nil)
+                        let alertController = UIAlertController(title: "", message: "Your balance is "+(response.first?.balance)!, preferredStyle:UIAlertControllerStyle.alert)
+                        
+                        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+                        { action -> Void in
+                            alertController.dismiss(animated: false, completion: nil)
+                        })
+                        self.present(alertController, animated: true, completion: nil)
+                    }
                     
-                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
-                    { action -> Void in
-                        alertController.dismiss(animated: false, completion: nil)
-                    })
-                    self.present(alertController, animated: true, completion: nil)
                 })
             })
         }
         
-       
+        
     }
     
     @IBAction func backbtntpd(_ sender: Any) {
