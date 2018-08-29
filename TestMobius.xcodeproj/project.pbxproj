@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541CD8E67CC920DA3D31D686 /* Pods_TestMobius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FF5DF864C2BCB2935F2F7 /* Pods_TestMobius.framework */; };
+		8B6DCDD32135579700A9342C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6DCDD22135579700A9342C /* AppDelegate.swift */; };
+		8B6DCDD52135579700A9342C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6DCDD42135579700A9342C /* ViewController.swift */; };
+		8B6DCDD82135579700A9342C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6DCDD62135579700A9342C /* Main.storyboard */; };
+		8B6DCDDA2135579700A9342C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6DCDD92135579700A9342C /* Assets.xcassets */; };
+		8B6DCDDD2135579700A9342C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6DCDDB2135579700A9342C /* LaunchScreen.storyboard */; };
+		8B6DCDE82135579700A9342C /* TestMobiusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6DCDE72135579700A9342C /* TestMobiusTests.swift */; };
+		8B6DCDF32135579700A9342C /* TestMobiusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6DCDF22135579700A9342C /* TestMobiusUITests.swift */; };
+		8BB5AABC21369A270097437F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5AABB21369A270097437F /* CreateAccountViewController.swift */; };
+		8BB5AABE21369A410097437F /* SendPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5AABD21369A410097437F /* SendPaymentViewController.swift */; };
+		8BE23A64213560A2003EC558 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A63213560A2003EC558 /* KeyPair.swift */; };
+		8BE23A6B213560E6003EC558 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A66213560E6003EC558 /* Base32.swift */; };
+		8BE23A6C213560E6003EC558 /* ChecksumXmodem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A67213560E6003EC558 /* ChecksumXmodem.swift */; };
+		8BE23A6D213560E6003EC558 /* ED25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A68213560E6003EC558 /* ED25519.swift */; };
+		8BE23A6E213560E6003EC558 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A69213560E6003EC558 /* Utils.swift */; };
+		8BE23A6F213560E6003EC558 /* XDR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A6A213560E6003EC558 /* XDR.swift */; };
+		8BE23A78213561E6003EC558 /* StellarLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A71213561E5003EC558 /* StellarLedger.swift */; };
+		8BE23A79213561E6003EC558 /* StellarLedgerEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A72213561E5003EC558 /* StellarLedgerEntries.swift */; };
+		8BE23A7A213561E6003EC558 /* StellarOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A73213561E5003EC558 /* StellarOverlay.swift */; };
+		8BE23A7B213561E6003EC558 /* StellarSCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A74213561E5003EC558 /* StellarSCP.swift */; };
+		8BE23A7C213561E6003EC558 /* StellarTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A75213561E5003EC558 /* StellarTransaction.swift */; };
+		8BE23A7D213561E6003EC558 /* StellarTransactionResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A76213561E5003EC558 /* StellarTransactionResults.swift */; };
+		8BE23A7E213561E6003EC558 /* StellarTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A77213561E5003EC558 /* StellarTypes.swift */; };
+		8BE23A80213563EA003EC558 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A7F213563EA003EC558 /* Account.swift */; };
+		8BE23A822135646C003EC558 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A812135646C003EC558 /* Effects.swift */; };
+		8BE23A8421356479003EC558 /* Horizon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A8321356479003EC558 /* Horizon.swift */; };
+		8BE23A8621356487003EC558 /* Offers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A8521356487003EC558 /* Offers.swift */; };
+		8BE23A8821356497003EC558 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A8721356497003EC558 /* Operations.swift */; };
+		8BE23A8A213564B3003EC558 /* Payments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A89213564B2003EC558 /* Payments.swift */; };
+		8BE23A8C213564CD003EC558 /* StellarSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A8B213564CD003EC558 /* StellarSDK.swift */; };
+		8BE23A8E213564D7003EC558 /* TransactionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A8D213564D6003EC558 /* TransactionBuilder.swift */; };
+		8BE23A90213564E0003EC558 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A8F213564E0003EC558 /* Transactions.swift */; };
+		8BE23A92213564EB003EC558 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE23A91213564EB003EC558 /* Types.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B6DCDE42135579700A9342C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6DCDC72135579700A9342C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B6DCDCE2135579700A9342C;
+			remoteInfo = TestMobius;
+		};
+		8B6DCDEF2135579700A9342C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6DCDC72135579700A9342C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B6DCDCE2135579700A9342C;
+			remoteInfo = TestMobius;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B534AC2A82EF095FB3F3DF0 /* Pods-TestMobius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMobius.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestMobius/Pods-TestMobius.debug.xcconfig"; sourceTree = "<group>"; };
+		8B6DCDCF2135579700A9342C /* TestMobius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMobius.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6DCDD22135579700A9342C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B6DCDD42135579700A9342C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B6DCDD72135579700A9342C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B6DCDD92135579700A9342C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B6DCDDC2135579700A9342C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B6DCDDE2135579700A9342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6DCDE32135579700A9342C /* TestMobiusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMobiusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6DCDE72135579700A9342C /* TestMobiusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMobiusTests.swift; sourceTree = "<group>"; };
+		8B6DCDE92135579700A9342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6DCDEE2135579700A9342C /* TestMobiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMobiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6DCDF22135579700A9342C /* TestMobiusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMobiusUITests.swift; sourceTree = "<group>"; };
+		8B6DCDF42135579700A9342C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB5AABB21369A270097437F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8BB5AABD21369A410097437F /* SendPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPaymentViewController.swift; sourceTree = "<group>"; };
+		8BE23A63213560A2003EC558 /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		8BE23A66213560E6003EC558 /* Base32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
+		8BE23A67213560E6003EC558 /* ChecksumXmodem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecksumXmodem.swift; sourceTree = "<group>"; };
+		8BE23A68213560E6003EC558 /* ED25519.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ED25519.swift; sourceTree = "<group>"; };
+		8BE23A69213560E6003EC558 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8BE23A6A213560E6003EC558 /* XDR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDR.swift; sourceTree = "<group>"; };
+		8BE23A71213561E5003EC558 /* StellarLedger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarLedger.swift; sourceTree = "<group>"; };
+		8BE23A72213561E5003EC558 /* StellarLedgerEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarLedgerEntries.swift; sourceTree = "<group>"; };
+		8BE23A73213561E5003EC558 /* StellarOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarOverlay.swift; sourceTree = "<group>"; };
+		8BE23A74213561E5003EC558 /* StellarSCP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarSCP.swift; sourceTree = "<group>"; };
+		8BE23A75213561E5003EC558 /* StellarTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarTransaction.swift; sourceTree = "<group>"; };
+		8BE23A76213561E5003EC558 /* StellarTransactionResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarTransactionResults.swift; sourceTree = "<group>"; };
+		8BE23A77213561E5003EC558 /* StellarTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarTypes.swift; sourceTree = "<group>"; };
+		8BE23A7F213563EA003EC558 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		8BE23A812135646C003EC558 /* Effects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
+		8BE23A8321356479003EC558 /* Horizon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Horizon.swift; sourceTree = "<group>"; };
+		8BE23A8521356487003EC558 /* Offers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offers.swift; sourceTree = "<group>"; };
+		8BE23A8721356497003EC558 /* Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		8BE23A89213564B2003EC558 /* Payments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payments.swift; sourceTree = "<group>"; };
+		8BE23A8B213564CD003EC558 /* StellarSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StellarSDK.swift; sourceTree = "<group>"; };
+		8BE23A8D213564D6003EC558 /* TransactionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionBuilder.swift; sourceTree = "<group>"; };
+		8BE23A8F213564E0003EC558 /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		8BE23A91213564EB003EC558 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		C46FF5DF864C2BCB2935F2F7 /* Pods_TestMobius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMobius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15B9744479D91D16BB9AC5A /* Pods-TestMobius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMobius.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestMobius/Pods-TestMobius.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B6DCDCC2135579700A9342C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541CD8E67CC920DA3D31D686 /* Pods_TestMobius.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6DCDE02135579700A9342C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6DCDEB2135579700A9342C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690A1D7B022BF5D55C1D8D49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B534AC2A82EF095FB3F3DF0 /* Pods-TestMobius.debug.xcconfig */,
+				F15B9744479D91D16BB9AC5A /* Pods-TestMobius.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B6DCDC62135579700A9342C = {
+			isa = PBXGroup;
+			children = (
+				8B6DCDD12135579700A9342C /* TestMobius */,
+				8B6DCDE62135579700A9342C /* TestMobiusTests */,
+				8B6DCDF12135579700A9342C /* TestMobiusUITests */,
+				8B6DCDD02135579700A9342C /* Products */,
+				690A1D7B022BF5D55C1D8D49 /* Pods */,
+				C029C3091CE2596A9974CBB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B6DCDD02135579700A9342C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B6DCDCF2135579700A9342C /* TestMobius.app */,
+				8B6DCDE32135579700A9342C /* TestMobiusTests.xctest */,
+				8B6DCDEE2135579700A9342C /* TestMobiusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B6DCDD12135579700A9342C /* TestMobius */ = {
+			isa = PBXGroup;
+			children = (
+				8B6DCDD22135579700A9342C /* AppDelegate.swift */,
+				8BE23A70213561E5003EC558 /* Types */,
+				8BE23A65213560E6003EC558 /* Utils */,
+				8BE23A91213564EB003EC558 /* Types.swift */,
+				8BE23A63213560A2003EC558 /* KeyPair.swift */,
+				8BE23A7F213563EA003EC558 /* Account.swift */,
+				8BE23A8F213564E0003EC558 /* Transactions.swift */,
+				8BE23A8D213564D6003EC558 /* TransactionBuilder.swift */,
+				8BE23A8721356497003EC558 /* Operations.swift */,
+				8BE23A812135646C003EC558 /* Effects.swift */,
+				8BE23A8321356479003EC558 /* Horizon.swift */,
+				8BE23A8521356487003EC558 /* Offers.swift */,
+				8BE23A89213564B2003EC558 /* Payments.swift */,
+				8BE23A8B213564CD003EC558 /* StellarSDK.swift */,
+				8B6DCDD42135579700A9342C /* ViewController.swift */,
+				8BB5AABB21369A270097437F /* CreateAccountViewController.swift */,
+				8BB5AABD21369A410097437F /* SendPaymentViewController.swift */,
+				8B6DCDD62135579700A9342C /* Main.storyboard */,
+				8B6DCDD92135579700A9342C /* Assets.xcassets */,
+				8B6DCDDB2135579700A9342C /* LaunchScreen.storyboard */,
+				8B6DCDDE2135579700A9342C /* Info.plist */,
+			);
+			path = TestMobius;
+			sourceTree = "<group>";
+		};
+		8B6DCDE62135579700A9342C /* TestMobiusTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B6DCDE72135579700A9342C /* TestMobiusTests.swift */,
+				8B6DCDE92135579700A9342C /* Info.plist */,
+			);
+			path = TestMobiusTests;
+			sourceTree = "<group>";
+		};
+		8B6DCDF12135579700A9342C /* TestMobiusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B6DCDF22135579700A9342C /* TestMobiusUITests.swift */,
+				8B6DCDF42135579700A9342C /* Info.plist */,
+			);
+			path = TestMobiusUITests;
+			sourceTree = "<group>";
+		};
+		8BE23A65213560E6003EC558 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8BE23A66213560E6003EC558 /* Base32.swift */,
+				8BE23A67213560E6003EC558 /* ChecksumXmodem.swift */,
+				8BE23A68213560E6003EC558 /* ED25519.swift */,
+				8BE23A69213560E6003EC558 /* Utils.swift */,
+				8BE23A6A213560E6003EC558 /* XDR.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8BE23A70213561E5003EC558 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				8BE23A71213561E5003EC558 /* StellarLedger.swift */,
+				8BE23A72213561E5003EC558 /* StellarLedgerEntries.swift */,
+				8BE23A73213561E5003EC558 /* StellarOverlay.swift */,
+				8BE23A74213561E5003EC558 /* StellarSCP.swift */,
+				8BE23A75213561E5003EC558 /* StellarTransaction.swift */,
+				8BE23A76213561E5003EC558 /* StellarTransactionResults.swift */,
+				8BE23A77213561E5003EC558 /* StellarTypes.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		C029C3091CE2596A9974CBB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C46FF5DF864C2BCB2935F2F7 /* Pods_TestMobius.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B6DCDCE2135579700A9342C /* TestMobius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6DCDF72135579700A9342C /* Build configuration list for PBXNativeTarget "TestMobius" */;
+			buildPhases = (
+				778E79B1CEEF63741E8559E5 /* [CP] Check Pods Manifest.lock */,
+				8B6DCDCB2135579700A9342C /* Sources */,
+				8B6DCDCC2135579700A9342C /* Frameworks */,
+				8B6DCDCD2135579700A9342C /* Resources */,
+				D1528674249A6124D6288B34 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMobius;
+			productName = TestMobius;
+			productReference = 8B6DCDCF2135579700A9342C /* TestMobius.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B6DCDE22135579700A9342C /* TestMobiusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6DCDFA2135579700A9342C /* Build configuration list for PBXNativeTarget "TestMobiusTests" */;
+			buildPhases = (
+				8B6DCDDF2135579700A9342C /* Sources */,
+				8B6DCDE02135579700A9342C /* Frameworks */,
+				8B6DCDE12135579700A9342C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B6DCDE52135579700A9342C /* PBXTargetDependency */,
+			);
+			name = TestMobiusTests;
+			productName = TestMobiusTests;
+			productReference = 8B6DCDE32135579700A9342C /* TestMobiusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B6DCDED2135579700A9342C /* TestMobiusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6DCDFD2135579700A9342C /* Build configuration list for PBXNativeTarget "TestMobiusUITests" */;
+			buildPhases = (
+				8B6DCDEA2135579700A9342C /* Sources */,
+				8B6DCDEB2135579700A9342C /* Frameworks */,
+				8B6DCDEC2135579700A9342C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B6DCDF02135579700A9342C /* PBXTargetDependency */,
+			);
+			name = TestMobiusUITests;
+			productName = TestMobiusUITests;
+			productReference = 8B6DCDEE2135579700A9342C /* TestMobiusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B6DCDC72135579700A9342C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sajid Nawaz";
+				TargetAttributes = {
+					8B6DCDCE2135579700A9342C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8B6DCDE22135579700A9342C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B6DCDCE2135579700A9342C;
+					};
+					8B6DCDED2135579700A9342C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B6DCDCE2135579700A9342C;
+					};
+				};
+			};
+			buildConfigurationList = 8B6DCDCA2135579700A9342C /* Build configuration list for PBXProject "TestMobius" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B6DCDC62135579700A9342C;
+			productRefGroup = 8B6DCDD02135579700A9342C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B6DCDCE2135579700A9342C /* TestMobius */,
+				8B6DCDE22135579700A9342C /* TestMobiusTests */,
+				8B6DCDED2135579700A9342C /* TestMobiusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B6DCDCD2135579700A9342C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6DCDDD2135579700A9342C /* LaunchScreen.storyboard in Resources */,
+				8B6DCDDA2135579700A9342C /* Assets.xcassets in Resources */,
+				8B6DCDD82135579700A9342C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6DCDE12135579700A9342C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6DCDEC2135579700A9342C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		778E79B1CEEF63741E8559E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestMobius-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1528674249A6124D6288B34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestMobius/Pods-TestMobius-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMobius/Pods-TestMobius-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B6DCDCB2135579700A9342C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE23A64213560A2003EC558 /* KeyPair.swift in Sources */,
+				8BE23A8621356487003EC558 /* Offers.swift in Sources */,
+				8BE23A822135646C003EC558 /* Effects.swift in Sources */,
+				8BE23A6D213560E6003EC558 /* ED25519.swift in Sources */,
+				8BE23A6F213560E6003EC558 /* XDR.swift in Sources */,
+				8BE23A7A213561E6003EC558 /* StellarOverlay.swift in Sources */,
+				8BE23A90213564E0003EC558 /* Transactions.swift in Sources */,
+				8BB5AABE21369A410097437F /* SendPaymentViewController.swift in Sources */,
+				8BE23A7B213561E6003EC558 /* StellarSCP.swift in Sources */,
+				8BE23A92213564EB003EC558 /* Types.swift in Sources */,
+				8BE23A8E213564D7003EC558 /* TransactionBuilder.swift in Sources */,
+				8BE23A80213563EA003EC558 /* Account.swift in Sources */,
+				8BE23A78213561E6003EC558 /* StellarLedger.swift in Sources */,
+				8BE23A7E213561E6003EC558 /* StellarTypes.swift in Sources */,
+				8B6DCDD52135579700A9342C /* ViewController.swift in Sources */,
+				8BE23A79213561E6003EC558 /* StellarLedgerEntries.swift in Sources */,
+				8BE23A8421356479003EC558 /* Horizon.swift in Sources */,
+				8BE23A7C213561E6003EC558 /* StellarTransaction.swift in Sources */,
+				8BE23A6E213560E6003EC558 /* Utils.swift in Sources */,
+				8BB5AABC21369A270097437F /* CreateAccountViewController.swift in Sources */,
+				8BE23A6C213560E6003EC558 /* ChecksumXmodem.swift in Sources */,
+				8B6DCDD32135579700A9342C /* AppDelegate.swift in Sources */,
+				8BE23A6B213560E6003EC558 /* Base32.swift in Sources */,
+				8BE23A8C213564CD003EC558 /* StellarSDK.swift in Sources */,
+				8BE23A8A213564B3003EC558 /* Payments.swift in Sources */,
+				8BE23A7D213561E6003EC558 /* StellarTransactionResults.swift in Sources */,
+				8BE23A8821356497003EC558 /* Operations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6DCDDF2135579700A9342C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6DCDE82135579700A9342C /* TestMobiusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6DCDEA2135579700A9342C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6DCDF32135579700A9342C /* TestMobiusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B6DCDE52135579700A9342C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B6DCDCE2135579700A9342C /* TestMobius */;
+			targetProxy = 8B6DCDE42135579700A9342C /* PBXContainerItemProxy */;
+		};
+		8B6DCDF02135579700A9342C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B6DCDCE2135579700A9342C /* TestMobius */;
+			targetProxy = 8B6DCDEF2135579700A9342C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B6DCDD62135579700A9342C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B6DCDD72135579700A9342C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B6DCDDB2135579700A9342C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B6DCDDC2135579700A9342C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B6DCDF52135579700A9342C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B6DCDF62135579700A9342C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B6DCDF82135579700A9342C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B534AC2A82EF095FB3F3DF0 /* Pods-TestMobius.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestMobius/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sahi.TestMobius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B6DCDF92135579700A9342C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15B9744479D91D16BB9AC5A /* Pods-TestMobius.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestMobius/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sahi.TestMobius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B6DCDFB2135579700A9342C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRRLWUDE6Q;
+				INFOPLIST_FILE = TestMobiusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sahi.TestMobiusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestMobius.app/TestMobius";
+			};
+			name = Debug;
+		};
+		8B6DCDFC2135579700A9342C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRRLWUDE6Q;
+				INFOPLIST_FILE = TestMobiusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sahi.TestMobiusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestMobius.app/TestMobius";
+			};
+			name = Release;
+		};
+		8B6DCDFE2135579700A9342C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRRLWUDE6Q;
+				INFOPLIST_FILE = TestMobiusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sahi.TestMobiusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestMobius;
+			};
+			name = Debug;
+		};
+		8B6DCDFF2135579700A9342C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRRLWUDE6Q;
+				INFOPLIST_FILE = TestMobiusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sahi.TestMobiusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestMobius;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B6DCDCA2135579700A9342C /* Build configuration list for PBXProject "TestMobius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6DCDF52135579700A9342C /* Debug */,
+				8B6DCDF62135579700A9342C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6DCDF72135579700A9342C /* Build configuration list for PBXNativeTarget "TestMobius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6DCDF82135579700A9342C /* Debug */,
+				8B6DCDF92135579700A9342C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6DCDFA2135579700A9342C /* Build configuration list for PBXNativeTarget "TestMobiusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6DCDFB2135579700A9342C /* Debug */,
+				8B6DCDFC2135579700A9342C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6DCDFD2135579700A9342C /* Build configuration list for PBXNativeTarget "TestMobiusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6DCDFE2135579700A9342C /* Debug */,
+				8B6DCDFF2135579700A9342C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B6DCDC72135579700A9342C /* Project object */;
+}
