@@ -1,10 +1,7 @@
 //
 //  CreateAccountViewController.swift
 //  TestMobius
-//
-//  Created by Sajid Nawaz on 8/29/18.
-//  Copyright © 2018 Sajid Nawaz. All rights reserved.
-//
+
 
 import UIKit
 
